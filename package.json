@@ -1,0 +1,22 @@
+{
+  "name": "netlify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"netlify dev\" \"npm run tailwind\"",
+    "tailwind": "npx tailwindcss -i ./tailwind/index.css -o ./dist/index.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.3.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "serverless-http": "^3.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
