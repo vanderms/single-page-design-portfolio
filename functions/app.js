@@ -2,7 +2,6 @@ const express = require('express');
 const serverless = require('serverless-http');
 const path = require('path')
 const ejs = require('ejs');
-const index = require('views/index');
 
 
 const app = express();
