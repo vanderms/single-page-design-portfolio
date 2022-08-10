@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
   console.log('I am listening');
-  res.render('index');
+  res.render('index.ejs');
 });
 
 module.exports.handler = serverless(app);
