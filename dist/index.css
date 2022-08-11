@@ -775,6 +775,16 @@ body {
   margin-right: auto;
 }
 
+.my-\[\] {
+  margin-top: ;
+  margin-bottom: ;
+}
+
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
 .mt-\[6\.25rem\] {
   margin-top: 6.25rem;
 }
@@ -1040,6 +1050,10 @@ body {
 
   .md\:mt-\[7\.5rem\] {
     margin-top: 7.5rem;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
   }
 
   .md\:h-16 {
