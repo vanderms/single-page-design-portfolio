@@ -689,37 +689,69 @@ body {
   }
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-12 {
   height: 3rem;
 }
 
+.w-\[17\.8125rem\] {
+  width: 17.8125rem;
+}
+
 .w-12 {
   width: 3rem;
 }
 
-.w-\[285px\] {
-  width: 285px;
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.w-\[17\.8125rem\] {
-  width: 17.8125rem;
+.grid-rows-\[22\.75rem_11\.375rem_9\.875rem_11\.375rem_11\.375rem\] {
+  grid-template-rows: 22.75rem 11.375rem 9.875rem 11.375rem 11.375rem;
+}
+
+.grid-rows-\[\] {
+  grid-template-rows: ;
+}
+
+.grid-rows-\[11\.375rem_9\.875rem\] {
+  grid-template-rows: 11.375rem 9.875rem;
 }
 
 .items-center {
@@ -728,6 +760,40 @@ body {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 92 222 / var(--tw-bg-opacity));
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 165 96 / var(--tw-bg-opacity));
+}
+
+.bg-pink {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 158 158 / var(--tw-bg-opacity));
+}
+
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 117 101 / var(--tw-bg-opacity));
+}
+
+.bg-cyan {
+  --tw-bg-opacity: 1;
+  background-color: rgb(97 196 183 / var(--tw-bg-opacity));
+}
+
+.bg-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 32 73 / var(--tw-bg-opacity));
 }
 
 .text-center {
@@ -745,8 +811,12 @@ body {
 }
 
 @media (min-width: 45.125rem) {
-  .md\:mt-\[2\.125rem\] {
-    margin-top: 2.125rem;
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:row-span-2 {
+    grid-row: span 2 / span 2;
   }
 
   .md\:mt-16 {
@@ -757,20 +827,64 @@ body {
     margin-top: 1.6875rem;
   }
 
+  .md\:mt-\[2\.125rem\] {
+    margin-top: 2.125rem;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:h-16 {
     height: 4rem;
+  }
+
+  .md\:w-\[35\.8125rem\] {
+    width: 35.8125rem;
   }
 
   .md\:w-16 {
     width: 4rem;
   }
 
-  .md\:w-\[\] {
-    width: ;
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:w-\[35\.8125rem\] {
-    width: 35.8125rem;
+  .md\:grid-rows-\[\] {
+    grid-template-rows: ;
+  }
+
+  .md\:grid-rows-\[182px_\] {
+    grid-template-rows: 182px;
+  }
+
+  .md\:grid-rows-\[182px_158px\] {
+    grid-template-rows: 182px 158px;
+  }
+
+  .md\:grid-rows-\[182px_158px_\] {
+    grid-template-rows: 182px 158px;
+  }
+
+  .md\:grid-rows-\[182px_158px_182px\] {
+    grid-template-rows: 182px 158px 182px;
+  }
+
+  .md\:grid-rows-\[182px_158px_11\.375rem\] {
+    grid-template-rows: 182px 158px 11.375rem;
+  }
+
+  .md\:grid-rows-\[182px_9\.875rem_11\.375rem\] {
+    grid-template-rows: 182px 9.875rem 11.375rem;
+  }
+
+  .md\:grid-rows-\[11\.375rem_9\.875rem_11\.375rem\] {
+    grid-template-rows: 11.375rem 9.875rem 11.375rem;
+  }
+
+  .md\:grid-rows-\[11\.375rem_9\.875rem\] {
+    grid-template-rows: 11.375rem 9.875rem;
   }
 }
 
@@ -782,4 +896,67 @@ body {
   .xl\:w-\[47rem\] {
     width: 47rem;
   }
+
+  .xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .xl\:grid-rows-\[11\.375rem_9\.875rem\] {
+    grid-template-rows: 11.375rem 9.875rem;
+  }
+}
+
+.\[\&\>li\]\:grid>li {
+  display: grid;
+}
+
+.\[\&\>li\]\:grid-cols-1>li {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.\[\&\>li\]\:content-between>li {
+  align-content: space-between;
+}
+
+.\[\&\>li\]\:rounded-lg>li {
+  border-radius: 0.5rem;
+}
+
+.\[\&\>li\]\:p-6>li {
+  padding: 1.5rem;
+}
+
+.\[\&\>li\]\:text-neutral>li {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.\[\&_span\]\:headline-sm span {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+
+@media (min-width: 45.125rem) {
+   {
+    max-width: 43.0625rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .\[\&_span\]\:headline-sm span {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+
+   {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding: 0.875rem 2.8125rem;
+  }
+}
+
+.\[\&_img\]\:justify-self-end img {
+  justify-self: end;
 }
