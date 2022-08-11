@@ -1139,6 +1139,26 @@ body {
 }
 
 @media (min-width: 71.375rem) {
+  .xl\:order-1 {
+    order: 1;
+  }
+
+  .xl\:order-2 {
+    order: 2;
+  }
+
+  .xl\:order-3 {
+    order: 3;
+  }
+
+  .xl\:order-4 {
+    order: 4;
+  }
+
+  .xl\:order-5 {
+    order: 5;
+  }
+
   .xl\:mt-0\.5 {
     margin-top: 0.125rem;
   }
@@ -1189,6 +1209,14 @@ body {
 
   .xl\:w-\[33\.75rem\] {
     width: 33.75rem;
+  }
+
+  .xl\:w-\[96\%\] {
+    width: 96%;
+  }
+
+  .xl\:w-\[45rem\] {
+    width: 45rem;
   }
 
   .xl\:grid-cols-\[27\.8125rem_1fr\] {
