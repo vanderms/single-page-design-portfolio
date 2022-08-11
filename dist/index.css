@@ -1155,6 +1155,26 @@ body {
     margin-top: 5.5rem;
   }
 
+  .xl\:mt-\[1\.4375rem\] {
+    margin-top: 1.4375rem;
+  }
+
+  .xl\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .xl\:mt-\[8\.5rem\] {
+    margin-top: 8.5rem;
+  }
+
+  .xl\:mt-\[\] {
+    margin-top: ;
+  }
+
+  .xl\:mt-\[88px\] {
+    margin-top: 88px;
+  }
+
   .xl\:w-\[47rem\] {
     width: 47rem;
   }
