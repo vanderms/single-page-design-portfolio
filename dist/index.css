@@ -803,6 +803,10 @@ body {
   margin-left: 100%;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -825,6 +829,18 @@ body {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[295px\] {
+  width: 295px;
+}
+
+.w-\[18\.4375rem\] {
+  width: 18.4375rem;
 }
 
 .max-w-\[18\.75rem\] {
@@ -929,6 +945,21 @@ body {
   background-color: rgb(85 32 73 / var(--tw-bg-opacity));
 }
 
+.bg-neutral {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 3 3 / var(--tw-bg-opacity));
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -949,6 +980,11 @@ body {
 .text-neutral-500 {
   --tw-text-opacity: 1;
   color: rgb(122 116 110 / var(--tw-text-opacity));
+}
+
+.text-neutral {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -1018,6 +1054,14 @@ body {
     width: 4rem;
   }
 
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[33\.75rem\] {
+    width: 33.75rem;
+  }
+
   .md\:max-w-full {
     max-width: 100%;
   }
@@ -1070,6 +1114,11 @@ body {
     gap: 1.875rem;
   }
 
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1096,6 +1145,18 @@ body {
     width: 47rem;
   }
 
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:w-\[540px\] {
+    width: 540px;
+  }
+
+  .xl\:w-\[33\.75rem\] {
+    width: 33.75rem;
+  }
+
   .xl\:grid-cols-\[27\.8125rem_1fr\] {
     grid-template-columns: 27.8125rem 1fr;
   }
@@ -1108,6 +1169,14 @@ body {
     grid-template-rows: 11.375rem 9.875rem;
   }
 
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
   .xl\:gap-\[7\.8125rem\] {
     gap: 7.8125rem;
   }
@@ -1118,6 +1187,35 @@ body {
 
   .xl\:self-center {
     align-self: center;
+  }
+
+  .xl\:py-\[5\.0625rem\] {
+    padding-top: 5.0625rem;
+    padding-bottom: 5.0625rem;
+  }
+
+  .xl\:pt-\[\] {
+    padding-top: ;
+  }
+
+  .xl\:pt-\[5\.0625rem\] {
+    padding-top: 5.0625rem;
+  }
+
+  .xl\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .xl\:pl-\[4\.0625rem\] {
+    padding-left: 4.0625rem;
+  }
+
+  .xl\:pr-\[5\.9375rem\] {
+    padding-right: 5.9375rem;
+  }
+
+  .xl\:text-left {
+    text-align: left;
   }
 }
 
