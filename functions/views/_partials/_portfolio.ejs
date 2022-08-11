@@ -1,0 +1,43 @@
+<section data-portfolio-section class="mt-[6.25rem] flex flex-col gap-8 items-center overflow-hidden
+  md:mt-[7.5rem] xl:mt-[5.5rem] md:gap-14
+">
+  <h2 class="headline-md text-neutral-800 text-center !leading-[2.5rem]">My Work</h2>
+  <ul data-slider class="grid grid-cols-[repeat(5,16.875rem)] gap-4 transition-all md:gap-[1.875rem]
+    md:grid-cols-[repeat(5,33.75rem)]
+  ">
+    <li><img src="/assets/image-slide-1.jpg" alt="work 1"></li>
+    <li><img src="/assets/image-slide-2.jpg" alt="work 2"></li>
+    <li><img src="/assets/image-slide-3.jpg" alt="work 3"></li>
+    <li><img src="/assets/image-slide-4.jpg" alt="work 4"></li>
+    <li><img src="/assets/image-slide-5.jpg" alt="work 5"></li>
+  </ul>
+  <div class="flex items-center justify-center gap-4">
+    <button aria-label="show previous work" class="slider-button" data-arrow='left'></button>
+    <button aria-label="show next work" class="slider-button" data-arrow="right"></button>
+  </div>
+</section>
+<script>
+  const portfolio = document.querySelector('[data-portfolio-section]');
+  const slider = portfolio.querySelector('[data-slider]');
+  const forward = portfolio.querySelector('[data-arrow="right"]');
+  const backward = portfolio.querySelector('[data-arrow="left"]');
+
+  const translate = {
+    value: 0,
+    backward() {
+      this.value = this.value >= 40 ? 40 : this.value + 20;
+      slider.style.transform = `translateX(${this.value}%)`;
+    },
+    forward() {
+      this.value = this.value <= -40 ? -40 : this.value - 20;
+      slider.style.transform = `translateX(${this.value}%)`;
+    }
+  }
+
+  forward.addEventListener('click', () => {
+    translate.forward()
+  });
+  backward.addEventListener('click', () => {
+    translate.backward()
+  });
+</script>

@@ -63,6 +63,19 @@
     @apply button-component bg-neutral-800 hover:bg-blue;
   }
 
+  .slider-button{
+    @apply block h-16 w-16 rounded-full bg-neutral-800 bg-center bg-no-repeat hover:bg-blue;
+    background-size: 15px 16px;
+  }
+
+  .slider-button[data-arrow='right']{
+    background-image: url(/assets/icon-arrow-right.svg);
+  }
+
+  .slider-button[data-arrow='left']{
+    background-image: url(/assets/icon-arrow-left.svg);
+  }
+
   @media screen(sm) {
     .container {
       max-width: 21.4375rem;
